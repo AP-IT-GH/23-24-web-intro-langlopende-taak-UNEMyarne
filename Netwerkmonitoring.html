@@ -13,7 +13,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   <!-- JavaScript: Bootstrap Bundle with Popper -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" defer></script>
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+  <link rel="stylesheet" href="./css/mapStyle.css">
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script src="js/mapScript2.js" defer></script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -55,7 +61,66 @@
     </nav>
     </header>
     <main>
-      
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="mb-4">Netwerkmonitoring</h1>
+            <h2>Wat is networkmonitoring?</h2>
+            <p>
+              Netwerkmonitoring is een cruciaal aspect van moderne IT-infrastructuurbeheer en speelt een essentiële rol in het waarborgen van de stabiliteit, prestaties en veiligheid van netwerkomgevingen. Het omvat het continue toezicht houden op de activiteiten en prestaties van netwerkapparatuur, -services en -communicatie om problemen te identificeren, te diagnosticeren en te verhelpen.
+            </p>
+            <h2>Waarom is network monitoring belangrijk?</h2>
+            <p>
+             <strong> 1|</strong> Proactief probleembeheer: Netwerken kunnen onderhevig zijn aan verschillende storingen en problemen, variërend van prestatieproblemen tot hardwarestoringen en beveiligingsinbreuken. Door middel van monitoring kunnen deze problemen vroegtijdig worden gedetecteerd, waardoor IT-teams snel kunnen reageren en mogelijke downtime kunnen minimaliseren. <br> <br>
+             <strong>2|</strong> Optimalisatie van netwerkprestaties: Door het monitoren van netwerkverkeer, bandbreedtegebruik en andere prestatie-indicatoren kunnen organisaties inzicht krijgen in de efficiëntie van hun netwerk. Dit stelt hen in staat om knelpunten te identificeren en optimalisaties door te voeren om de algehele prestaties te verbeteren. <br><br>
+             <strong>3|</strong> Veiligheid en compliance: Netwerkmonitoring kan helpen bij het identificeren van verdachte activiteiten, zoals pogingen tot ongeautoriseerde toegang of malware-aanvallen. Door het monitoren van logboeken en netwerkverkeer kunnen beveiligingsincidenten worden gedetecteerd en kunnen maatregelen worden genomen om de veiligheid van het netwerk te waarborgen en te voldoen aan regelgeving en compliance-vereisten. <br><br>
+             <strong>4|</strong> Capaciteitsplanning: Door trends in netwerkverkeer en resourcegebruik te analyseren, kunnen organisaties anticiperen op toekomstige capaciteitsbehoeften en tijdig investeringen plannen om aan deze behoeften te voldoen. Dit helpt om overprovisioning te voorkomen en de kosten te optimaliseren.
+            </p>
+            <h3>voordelen:</h3>
+            <ul>
+              <li>Bewaking van netwerkprestaties in realtime</li>
+              <li>Identificatie van anomalieën en bedreigingen</li>
+              <li>Proactieve reactie op netwerkproblemen</li>
+              <li>Optimalisatie van netwerkconfiguratie en bronnen</li>
+            </ul>
+            <figure>
+              <img src="assets/images/image-02.png" class="img-fluid" alt="Netwerkmonitoring">
+              <figcaption>Netwerkmonitoring in actie</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <h2>Waar vindt u ons voor de beste Netwerkmonitoring</h2>
+            <div id="Topic1Map"></div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <table class="table">
+              <caption>Status Netwerk</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Apparaat</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Router</td>
+                  <td>Actief</td>
+                </tr>
+                <tr>
+                  <td>Switch</td>
+                  <td>Actief</td>
+                </tr>
+                <tr>
+                  <td>Firewall</td>
+                  <td>Actief</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="text-center text-white" style="background-color: #09DBB5;">
      
