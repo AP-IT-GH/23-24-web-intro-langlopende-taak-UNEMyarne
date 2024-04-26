@@ -1,0 +1,71 @@
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-link:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    border: 1px solid #09DBB5;
+    border-radius: 5px;
+    background-color: #09DBB5;  
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-body{
+    background-color: #09DBB5;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+.col-md-6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    margin: auto; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+figcaption {
+    text-align: center; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+.btn {
+    border: 1px solid #09DB26;
+    border-radius: 5px;
+    background-color: #09DB26;
+}
+
+.btn:hover{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center; 
+    color: #ffffff; 
+    font-weight: bold; 
+    background-color: #09DB26;
+    padding: 20px;
+}
+
+.service-box {
+    background-color: #09DB26;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
