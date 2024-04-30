@@ -7,3 +7,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let NetwerkbeheerMarker = L.marker([51.23009, 4.41616]).addTo(map);
 NetwerkbeheerMarker.bindPopup("<b>Netwerkbeheer</b><br>Ellermanstraat 33").openPopup();
+
+
+
+
+
