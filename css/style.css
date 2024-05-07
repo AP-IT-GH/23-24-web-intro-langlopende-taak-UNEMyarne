@@ -89,3 +89,7 @@ h1 {
   .img-fluid {
     border-radius: 15px; 
   }
+
+  .achtergrondkleur{
+    background-color: #09DBB5;
+  }
