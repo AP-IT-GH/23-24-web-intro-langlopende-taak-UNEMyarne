@@ -93,3 +93,19 @@ h1 {
   .achtergrondkleur{
     background-color: #09DBB5;
   }
+
+  #ip-details {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#ip-details p {
+    margin: 5px 0;
+}
+
+#ip-details span {
+    font-weight: bold;
+    color: #007bff;
+}
